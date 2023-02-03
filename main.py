@@ -11,9 +11,13 @@ def spend_points(transactions, spend_amount):
         payer, points, timestamp = transaction
         if payer not in payer_points:
             payer_points[payer] = 0
+        if(points < 0):
+            spend_amount += -(points)
+
+    for transaction in transactions:
+        payer, points, timestamp = transaction
 
         if (points < 0):
-            spend_amount += -(points)
             points = 0
         else:
             if (spend_amount >= points):
