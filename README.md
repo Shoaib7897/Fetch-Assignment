@@ -37,7 +37,5 @@ The output is a dictionary with payer names as keys and their point balances as 
 
 ## Note
 The script assumes that the transactions.csv file is located in the same directory as the script.
-The script assumes that 
-1. The oldest points to be spent first (oldest based on transaction timestamp, not the order they’re received) 
-2. No payer's points to go negative. 
 
+The script assumes that the amount spent by user will be less than or equal to the overall points of payers.
