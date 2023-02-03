@@ -24,7 +24,7 @@ timestamp: The date and time of the transaction in the format YYYY-MM-DDTHH:MM:S
 The script takes one command-line argument, the spend_amount, which is an integer representing the amount of points the user wants to spend.
 
 ```bash
-python main.py 5000
+python main.py {spend_amount}
 ```
 
 ## Output
